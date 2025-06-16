@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutoriais do Leo - Aprenda Desenvolvimento Web</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">Tutoriais do Leo</a></h1>
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="categorias.html">Tutoriais</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero new-hero-layout">
+            <div class="hero-img-col">
+                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80" alt="Desenvolvimento Web" class="hero-img" style="width:100%;border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,0.25);">
+            </div>
+            <div class="hero-text-col">
+                <h2>Aprenda Desenvolvimento Web de Forma Prática</h2>
+                <p>Descubra tutoriais passo a passo para iniciantes e intermediários em HTML, CSS e JavaScript.<br>Conteúdo direto ao ponto, exemplos reais e evolução garantida!</p>
+                <a href="categorias.html" class="btn" style="font-size:1.3rem;padding:18px 40px;margin-top:20px;">Explorar Tutoriais</a>
+            </div>
+        </section>
+
+        <section class="featured-tutorials">
+            <h2 style="text-align:center;margin-bottom:30px;">Tutoriais em Destaque</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-img" style="background-image:url('https://via.placeholder.com/400x180/4a9eff/fff?text=HTML+e+CSS');"></div>
+                    <div class="card-content">
+                        <span class="category">HTML & CSS</span>
+                        <h3>Introdução ao HTML5 e CSS3</h3>
+                        <p>Aprenda a criar páginas web do zero com as principais tags e estilos modernos.</p>
+                        <a href="tutorials/tutorial-html-css.html">Ver Tutorial</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background-image:url('https://via.placeholder.com/400x180/2ecc71/fff?text=JavaScript');"></div>
+                    <div class="card-content">
+                        <span class="category">JavaScript</span>
+                        <h3>JavaScript Básico</h3>
+                        <p>Entenda os fundamentos da linguagem que dá vida às páginas web.</p>
+                        <a href="tutorials/tutorial-javascript.html">Ver Tutorial</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background-image:url('https://via.placeholder.com/400x180/ffd93d/222?text=Projetos+Práticos');"></div>
+                    <div class="card-content">
+                        <span class="category">Projetos</span>
+                        <h3>Mini Projetos Práticos</h3>
+                        <p>Coloque a mão na massa com desafios e projetos para praticar o que aprendeu.</p>
+                        <a href="categorias.html">Ver Todos</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-it-works" style="margin:60px 0 30px 0;">
+            <h2 style="text-align:center;margin-bottom:30px;">Como Funciona?</h2>
+            <div style="display:flex;flex-wrap:wrap;gap:30px;justify-content:center;">
+                <div style="flex:1;min-width:220px;max-width:300px;text-align:center;">
+                    <i class="fas fa-search fa-2x" style="color:var(--primary-color);"></i>
+                    <h4 style="margin:15px 0 10px 0;">Escolha o Tutorial</h4>
+                    <p style="color:var(--text-muted);">Navegue pelas categorias e encontre o conteúdo ideal para seu momento de aprendizado.</p>
+                </div>
+                <div style="flex:1;min-width:220px;max-width:300px;text-align:center;">
+                    <i class="fas fa-laptop-code fa-2x" style="color:var(--secondary-color);"></i>
+                    <h4 style="margin:15px 0 10px 0;">Aprenda na Prática</h4>
+                    <p style="color:var(--text-muted);">Siga os exemplos, teste o código e veja o resultado na hora. Tudo explicado de forma simples.</p>
+                </div>
+                <div style="flex:1;min-width:220px;max-width:300px;text-align:center;">
+                    <i class="fas fa-rocket fa-2x" style="color:var(--warning-color);"></i>
+                    <h4 style="margin:15px 0 10px 0;">Evolua Sempre</h4>
+                    <p style="color:var(--text-muted);">Avance para desafios maiores, pratique com projetos e acompanhe sua evolução no mundo web!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Tutoriais do Leo. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Tutoriais do Leo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">Tutoriais do Leo</a></h1>
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categorias.html">Tutoriais</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html" class="active">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="contact-section">
+            <h2>Entre em Contato</h2>
+            <p>Tem dúvidas, sugestões ou quer colaborar com nosso projeto? Envie sua mensagem!</p>
+            
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Assunto:</label>
+                    <select id="subject" name="subject">
+                        <option value="duvida">Dúvida sobre tutorial</option>
+                        <option value="sugestao">Sugestão de conteúdo</option>
+                        <option value="colaboracao">Quero colaborar</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn">Enviar Mensagem</button>
+            </form>
+        </section>
+
+        <section class="contact-info">
+            <h3>Outras Formas de Contato</h3>
+            <div class="info-cards">
+                <div class="info-card">
+                    <i class="fas fa-envelope"></i>
+                    <h4>E-mail</h4>
+                    <p>contato@tutoriaisdoleo.com</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Localização</h4>
+                    <p>[Nome da Universidade]</p>
+                    <p>Departamento de Computação</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-clock"></i>
+                    <h4>Horário de Atendimento</h4>
+                    <p>Segunda a Sexta</p>
+                    <p>9h às 18h</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Tutoriais do Leo. Todos os direitos reservados.</p>
+            <p>Desenvolvido por [Seu Nome] e [Nome do Colega]</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
